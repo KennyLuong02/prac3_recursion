@@ -11,7 +11,7 @@ int Reverser::reverseDigit(int number) {
         return number;
     }
     int res = number / 1;
-    if (number <= 0 || number >= 0 && res*1== number) {
+    if (number <= 0 || (number >= 0 && res*1== number)) {
 
     } else {
         return -1;
