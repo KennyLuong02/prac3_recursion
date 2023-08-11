@@ -10,6 +10,13 @@ int Reverser::reverseDigit(int number) {
     if (number < 10) {
         return number;
     }
+    int res = number / 1;
+    if (number <= 0 || number >= 0 && res*1== number) {
+
+    } else {
+        return -1;
+    }
+
     int lastDigit = number%10;
     int remainingdigits= number/10;
     int a = countDigits(remainingdigits);
@@ -17,6 +24,7 @@ int Reverser::reverseDigit(int number) {
 }
 
 string Reverser::reverseString(string letters) {
+    
     if (letters.empty()) {
         return letters;
     }
