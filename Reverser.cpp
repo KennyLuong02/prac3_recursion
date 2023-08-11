@@ -6,7 +6,6 @@ using namespace std;
 
 Reverser::Reverser() {}
 
-int lastDigit=0;
 int Reverser::reverseDigit(int number) {
     if (number < 10) {
         return number;
