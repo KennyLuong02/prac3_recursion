@@ -42,7 +42,7 @@ string Reverser::reverseString(string letters) {
     //a digit in the string, the throw will occur
     try
     {
-        if(stoi(letters) <= 9 && 0 <= stoi(letters)) {
+        if(isdigit(letters[0])) {
             throw(letters);
         } else {
             if (letters.empty()) {
