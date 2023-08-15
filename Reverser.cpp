@@ -13,20 +13,7 @@ int Reverser::reverseDigit(int number) {
         if(number < 0) {
             throw(number);
         } else {
-            if (number < 10) {
-                return number;
-            }
-            int res = number / 1;
-            if (number <= 0 || (number >= 0 && res*1== number)) {
-
-            } else {
-                return -1;
-            }
-
-            int lastDigit = number%10;
-            int remainingdigits= number/10;
-            int a = countDigits(remainingdigits);
-            return lastDigit * pow(10, a) + reverseDigit(remainingdigits);
+            return this->reverseDigit(number , 0);
 
         }
     }
@@ -36,6 +23,17 @@ int Reverser::reverseDigit(int number) {
     }
     
 }
+
+int Reverser::reverseDigit(int numInput , int currNum) {
+    if(numInput < 10) {
+        return (currNum * 10) + numInput;
+    } else {
+        int modu = numInput % 10;
+        return reverseDigit((numInput - modu) / 10 , (currNum * 10) + modu);
+    }
+}
+
+
 
 string Reverser::reverseString(string letters) {
     //Handling the errors, the try code will run normally, if any case that there is

@@ -21,9 +21,9 @@ int main() {
     Reverser r;
 
     //int reversedNumber = r.reverseDigit(-3);
-    cout << "Reversed Number: " << r.reverseDigit(-3) << endl;
+    cout << "Reversed Number: " << r.reverseDigit(23) << endl;
    // string reversedString = r.reverseString("2");
-    cout << "Reversed String: " << r.reverseString("2") << endl;
+   // cout << "Reversed String: " << r.reverseString("2") << endl;
 
     return 0;
 }
