@@ -15,6 +15,7 @@ class Reverser {
     public:
         Reverser();
         int reverseDigit(int number);
+        int reverseDigit(int numberInput , int currentNumber);
         string reverseString(string letters);
         int countDigits(int num);
 };

@@ -20,10 +20,10 @@ int main() {
 
     Reverser r;
 
-    int reversedNumber = r.reverseDigit(123456789);
-    cout << "Reversed Number: " << reversedNumber << endl;
-    string reversedString = r.reverseString("meow");
-    cout << "Reversed String: " << reversedString << endl;
+    //int reversedNumber = r.reverseDigit(-3);
+    cout << "Reversed Number: " << r.reverseDigit(23) << endl;
+   // string reversedString = r.reverseString("2");
+   // cout << "Reversed String: " << r.reverseString("2") << endl;
 
     return 0;
 }
